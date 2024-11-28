@@ -93,7 +93,7 @@ Why: Monitoring the response bytes can help identify data exfiltration or large 
 
 * DGA Activity (random domain generation algorithms):
     1. Look for domains with high entropy (e.g., randomly generated domain names).
-    2. Check rcode_name == "NXDOMAIN" or rcode_name == "NOERROR", which can indicate failed DGA attempts or connections.
+    2. Check rcode_name == "NXDOMAIN" which can indicate failed DGA attempts or connections.
     3. Compare the queried domains with a list of known DGAs or look for newly generated domains.
 
 * DNS Exfiltration (repeated queries to suspicious domains):
